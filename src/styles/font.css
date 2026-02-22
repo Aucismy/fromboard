@@ -1,0 +1,201 @@
+/* Подключкение шрифта */
+
+@font-face {
+    font-family: 'Formular';
+    src: url('../resources/font/formular/Formular-BlackItalic.eot');
+    src: local('Formular Black Italic'), local('Formular-BlackItalic'),
+        url('../resources/font/formular/Formular-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('../resources/font/formular/Formular-BlackItalic.woff2') format('woff2'),
+        url('../resources/font/formular/Formular-BlackItalic.woff') format('woff'),
+        url('../resources/font/formular/Formular-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Formular';
+    src: url('../resources/font/formular/Formular-MediumItalic.eot');
+    src: local('Formular Medium Italic'), local('Formular-MediumItalic'),
+        url('../resources/font/formular/Formular-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('../resources/font/formular/Formular-MediumItalic.woff2') format('woff2'),
+        url('../resources/font/formular/Formular-MediumItalic.woff') format('woff'),
+        url('../resources/font/formular/Formular-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Formular';
+    src: url('../resources/font/formular/Formular-Italic.eot');
+    src: local('Formular Italic'), local('Formular-Italic'),
+        url('../resources/font/formular/Formular-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../resources/font/formular/Formular-Italic.woff2') format('woff2'),
+        url('../resources/font/formular/Formular-Italic.woff') format('woff'),
+        url('../resources/font/formular/Formular-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Formular';
+    src: url('../resources/font/formular/Formular-LightItalic.eot');
+    src: local('Formular Light Italic'), local('Formular-LightItalic'),
+        url('../resources/font/formular/Formular-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../resources/font/formular/Formular-LightItalic.woff2') format('woff2'),
+        url('../resources/font/formular/Formular-LightItalic.woff') format('woff'),
+        url('../resources/font/formular/Formular-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Formular';
+    src: url('../resources/font/formular/Formular-Black.eot');
+    src: local('Formular Black'), local('Formular-Black'),
+        url('../resources/font/formular/Formular-Black.eot?#iefix') format('embedded-opentype'),
+        url('../resources/font/formular/Formular-Black.woff2') format('woff2'),
+        url('../resources/font/formular/Formular-Black.woff') format('woff'),
+        url('../resources/font/formular/Formular-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Formular';
+    src: url('../resources/font/formular/Formular-Light.eot');
+    src: local('Formular Light'), local('Formular-Light'),
+        url('../resources/font/formular/Formular-Light.eot?#iefix') format('embedded-opentype'),
+        url('../resources/font/formular/Formular-Light.woff2') format('woff2'),
+        url('../resources/font/formular/Formular-Light.woff') format('woff'),
+        url('../resources/font/formular/Formular-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Formular';
+    src: url('../resources/font/formular/Formular.eot');
+    src: local('Formular'),
+        url('../resources/font/formular/Formular.eot?#iefix') format('embedded-opentype'),
+        url('../resources/font/formular/Formular.woff2') format('woff2'),
+        url('../resources/font/formular/Formular.woff') format('woff'),
+        url('../resources/font/formular/Formular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Formular';
+    src: url('../resources/font/formular/Formular-Medium.eot');
+    src: local('Formular Medium'), local('Formular-Medium'),
+        url('../resources/font/formular/Formular-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../resources/font/formular/Formular-Medium.woff2') format('woff2'),
+        url('../resources/font/formular/Formular-Medium.woff') format('woff'),
+        url('../resources/font/formular/Formular-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Formular';
+    src: url('../resources/font/formular/Formular-BoldItalic.eot');
+    src: local('Formular Bold Italic'), local('Formular-BoldItalic'),
+        url('../resources/font/formular/Formular-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../resources/font/formular/Formular-BoldItalic.woff2') format('woff2'),
+        url('../resources/font/formular/Formular-BoldItalic.woff') format('woff'),
+        url('../resources/font/formular/Formular-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Formular';
+    src: url('../resources/font/formular/Formular-Bold.eot');
+    src: local('Formular Bold'), local('Formular-Bold'),
+        url('../resources/font/formular/Formular-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../resources/font/formular/Formular-Bold.woff2') format('woff2'),
+        url('../resources/font/formular/Formular-Bold.woff') format('woff'),
+        url('../resources/font/formular/Formular-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Класы шрифтов */
+
+.xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
+}
+
+.sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+
+.xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+.xl-2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.xl-3 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+}
+
+.xl-4 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+}
+
+.xl-5 {
+    font-size: 3rem;
+    line-height: 3rem;
+}
+
+.xl-6 {
+    font-size: 3.75rem;
+    line-height: 3.75rem;
+}
+
+.xl-7 {
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+}
+
+.xl-8 {
+    font-size: 6rem;
+    line-height: 6rem;
+}
+
+.xl-9 {
+    font-size: 8rem;
+    line-height: 8rem;
+}
+
+/* Классы weight */
+
+.w-light {
+    font-weight: 300;
+}
+
+.w-medium {
+    font-weight: 500;
+}
+
+.w-bold {
+    font-weight: 700;
+}
+
+.w-black {
+    font-weight: 900;
+}

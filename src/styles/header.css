@@ -1,0 +1,49 @@
+.header>.container {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.header-right-menu {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.delivery-cost {
+    text-align: right;
+}
+
+.header-right-menu>hr {
+    width: 1px;
+    height: 76px;
+    background-color: var(--color-purple-400);
+}
+
+.phone-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+
+
+
+
+
+
+@media  (max-width: 758px) {
+    .header-right-menu {
+        gap: 16px;
+    }
+}
