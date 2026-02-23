@@ -6,6 +6,8 @@ import { useState, useRef, useEffect } from "react"
 import DeliveryCost from "./DeliveryCost"
 import PhoneInfo from "./PhoneInfo"
 
+
+
 const HeaderRightMenu = () => {
 
     // Переменная состояния кнопки меню
