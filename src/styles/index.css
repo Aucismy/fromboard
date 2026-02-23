@@ -83,37 +83,19 @@ svg:focus-visible {
 
 .container {
     width: 100%;
-    /* height: 100%; */
     padding: 0px 192px;
-
-
-    background-color: aqua;
-
-
-    @media (max-width: 1500px) {
-        padding: 0 128px;
-    }
-
-    @media (max-width: 1300px) {
-        padding: 0 60px;
-    }
-
-    @media (max-width: 800px) {
-        padding: 0 30px;
-    }
-
-    @media (max-width: 550px) {
-        padding: 0 20px;
-    }
 }
 
-
-
-
-
-
-
-
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: none;
+    z-index: 5;
+}
 
 .purple-button {
     min-width: 196px;
@@ -139,3 +121,32 @@ svg:focus-visible {
     outline: 2px dashed var(--color-purple-400);
     outline-offset: 2px;
 }
+
+
+
+
+
+@media (max-width: 1500px) {
+    .container {
+        padding: 0 128px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .container {
+        padding: 0 60px;
+    }
+}
+
+@media (max-width: 800px) {
+    .container {
+        padding: 0 30px;
+    }
+}
+
+@media (max-width: 550px) {
+    .container {
+        padding: 0 20px;
+    }
+}
+

@@ -1,7 +1,18 @@
+.header {
+    background-color: var(--color-gray-50);
+    position: relative;
+    z-index: 10;
+}
+
 .header>.container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
     padding-top: 24px;
     padding-bottom: 24px;
 }
+
+/* Верхний заголовок */
 
 .header-top {
     display: flex;
@@ -36,14 +47,83 @@
     gap: 4px;
 }
 
+/* Нижний заголовок */
+
+.header-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background-color: var(--color-gray-50);
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-links {
+    display: flex;
+    gap: 0 24px ;
+}
+
+.submit-app {
+    width: 196px;
+    height: 44px;
+}
 
 
 
 
 
+
+@media (max-width: 1330px) {
+    .header>.container {
+        gap: 12px;
+    }
+
+    .delivery-cost {
+        display: flex;
+        justify-content: space-around;
+        text-wrap: balance;
+        gap: 24px;
+        text-align: center;
+    }
+
+    .nav-links {
+        padding: 12px 0;
+        border-top: 2px solid var(--color-purple-400);
+        border-bottom: 2px solid var(--color-purple-400);
+    }
+}
 
 @media  (max-width: 758px) {
     .header-right-menu {
         gap: 16px;
+    }
+
+    .header-bottom {
+        display: none;
+        position: absolute;
+        top: 120px;
+        left: 0;
+        padding: 0 20px 20px 24px;
+    }
+}
+
+@media (max-width: 580px) {
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 24px;
+        justify-content: center;
+    }
+
+    .top-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .delivery-cost {
+        flex-wrap: wrap;
     }
 }

@@ -16,14 +16,33 @@ const HeaderRightMenu = () => {
 
     // Автоматическое закрытие меню, если ширина экрана больше необходимого и оно открыто
     useEffect(() => {
-        if (widthScreen <= 758 && stateBurger == true) {
+        if (widthScreen > 758 && stateBurger == true) {
             onClickBurger()
         }
     }, [widthScreen])
 
     // Функция для обработки нажатия кнопки меню
     const onClickBurger = () => {
+
+        // Переменная нижнего заголовка
+        const headerBottomElement = document.querySelector('.header-bottom')
+
+        // Переменная затемнения
+        const overlayElement = document.querySelector('#overlay')
+
         setStateBurger(!stateBurger)
+
+        // Открытие и закрытие скрытого меню
+        if (!stateBurger == true) {
+            headerBottomElement.style.borderRadius = '0 0 16px 16px'
+            headerBottomElement.style.display = 'flex'
+            overlayElement.style.display = 'block'
+        }
+        else {
+            headerBottomElement.style.borderRadius = ''
+            headerBottomElement.style.display = ''
+            overlayElement.style.display = ''
+        }
     }
 
     return (
