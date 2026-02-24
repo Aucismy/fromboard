@@ -1,12 +1,14 @@
 
-
 const MainShippingCalc = () => {
     return (
         <div className="main-shipping-calc">
 
+            {/* Форма расчета */}
             <form action="" className="main-form">
-                <h2>Калькулятор доставки</h2>
-                <p>Посчитайте, сколько будет стоить перевозка покупки из зарубежа</p>
+                <div className="form-info">
+                    <h2 className="xl-3 w-bold">Калькулятор доставки</h2>
+                    <p>Посчитайте, сколько будет стоить перевозка<br /> покупки из зарубежа</p>
+                </div>
                 <div className="enter-data">
                     <input className="form-input-name" type="text" placeholder="Имя" />
                     <input className="form-input-mail" type="text" placeholder="Почта" />
@@ -18,7 +20,7 @@ const MainShippingCalc = () => {
                     <input className="form-input-sity-buy" type="text" placeholder="Город покупки" />
                     <input className="form-input-sity-delivery" type="text" placeholder="Город доставки" />
                 </div>
-                <input type="submit" value="Заказать расчёт" />
+                <input className="form-submit purple-button w-bold" type="submit" value="Заказать расчёт" />
             </form>
         </div>
     )

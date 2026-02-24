@@ -1,14 +1,13 @@
-import '../../styles/mainhero.css'
+import '../../../styles/mainhero.css'
 import MainHeroInfo from "./MainHeroInfo"
 import MainShippingCalc from './MainShippingCalc'
 
+// Главная информация о сайте
 const MainHero = () => {
     return (
         <div className="main-hero">
-            <div className="container">
                 <MainHeroInfo />
                 <MainShippingCalc />
-            </div>
         </div>
     )
 }

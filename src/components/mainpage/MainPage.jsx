@@ -1,9 +1,11 @@
-import MainHero from "./MainHero"
+import MainHero from "./mainhero/MainHero"
 
 const MainPage = () => {
     return (
         <div className="main-page">
-            <MainHero />
+            <div className="container">
+                <MainHero />
+            </div>
         </div>
     )
 }
