@@ -1,6 +1,9 @@
 .main-page {
     padding: 72px 0;
     background-color: var(--color-gray-200);
+}
+
+.main-page>.container {
     display: flex;
     flex-direction: column;
     gap: 72px;

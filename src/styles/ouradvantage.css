@@ -1,0 +1,69 @@
+/* Настройка главного контейнера */
+.our-advantages {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* Заголовок преимуществ */
+.our-advantages>h2 {
+    text-align: center;
+}
+
+/* список преимуществ */
+.list-advantages {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+/* блок преимущества */
+.advantage {
+    padding: 24px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.advantage>img {
+    width: 136px;
+}
+
+.advantage-info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    word-break: break-word;
+}
+
+/* Адаптив */
+@media (max-width: 1736px) {
+    .list-advantages {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 1024px) {
+    .advantage>img {
+        width: 108.8px;
+    }
+}
+
+@media (max-width: 920px) {
+    .list-advantages {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .advantage {
+        max-width: 420px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .advantage {
+        flex-direction: column;
+        text-align: center;
+    }
+}
