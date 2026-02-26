@@ -1,0 +1,64 @@
+.other-questions {
+    background-color: var(--color-gray-50);
+    padding: 64px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+}
+
+.other-questions>h2 {
+    text-align: center;
+}
+
+.form-other-questions {
+    max-width: 497px;
+    width: 100%;
+    display: grid;
+    grid-template-areas: 'foqname foqmail'
+        'foqphone foqtheme'
+        'foqmessage foqmessage'
+        'foqbutton foqbutton';
+    gap: 24px;
+}
+
+.foq-name {
+    grid-area: foqname;
+}
+
+.foq-mail {
+    grid-area: foqmail;
+}
+
+.foq-phone {
+    grid-area: foqphone;
+}
+
+.foq-theme {
+    grid-area: foqtheme;
+}
+
+.foq-message {
+    grid-area: foqmessage;
+    height: 150px;
+}
+
+.foq-button {
+    grid-area: foqbutton;
+}
+
+@media (max-width: 590px) {
+    .other-questions {
+        padding: 32px;
+    }
+
+    .form-other-questions {
+        grid-template-areas: 'foqname foqname'
+                             'foqmail foqmail'
+                             'foqphone foqphone'
+                             'foqtheme foqtheme'
+                             'foqmessage foqmessage'
+                             'foqbutton foqbutton';
+    }
+}
