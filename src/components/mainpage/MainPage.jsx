@@ -1,6 +1,7 @@
 import MainHero from "./mainhero/MainHero"
 import OurAdvantages from "./ourdvantages/OurAdvantages"
 import QualityAssurance from "./qualityassurance/QualityAssurance"
+import Feedback from "./feedback/Feedback"
 
 const MainPage = () => {
     return (
@@ -9,6 +10,7 @@ const MainPage = () => {
                 <MainHero />
                 <OurAdvantages />
                 <QualityAssurance />
+                <Feedback />
             </div>
         </div>
     )
