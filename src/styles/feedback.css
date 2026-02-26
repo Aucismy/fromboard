@@ -55,6 +55,7 @@
 
 .feedback-author {
     margin-top: auto;
+    color: var(--color-gray-500);
 }
 
 @media (max-width: 1536px) {
