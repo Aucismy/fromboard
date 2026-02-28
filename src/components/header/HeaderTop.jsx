@@ -1,10 +1,13 @@
+// Импорт пользовательского хука
 import { useReplacementClass } from "../../utils"
+// Импорт компонентов
 import Logo from "./Logo"
 import HeaderRightMenu from "./HeaderRightMenu"
 
 // Верхний заголовок страницы
 const HeaderTop = () => {
 
+    // Переменная класса текста логотипа
     const classTextLogo = `logo-text ${useReplacementClass("xl-2", [
                 {maxWidth: 758, fontClass: 'lg'}
             ])} w-black`

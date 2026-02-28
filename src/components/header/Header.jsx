@@ -1,4 +1,6 @@
+// Импорт стилей
 import '../../styles/header.css'
+// Импорт компонентов
 import HeaderTop from "./HeaderTop"
 import HeaderBottom from './HeaderBottom'
 

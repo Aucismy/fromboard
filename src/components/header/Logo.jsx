@@ -1,5 +1,3 @@
-// Импорт кастомного хука для замены классов шрифта
-import { useReplacementClass } from '../../utils'
 
 // Логотип
 const Logo = ({classTextLogo = 'xl-2 w-black'}) => {

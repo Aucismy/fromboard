@@ -45,12 +45,14 @@ const HeaderRightMenu = () => {
         }
     }
 
+    // Переменная класса номера
     const classPhoneNumber = `phone-number ${useReplacementClass('xl-4', [
         { maxWidth: 1536, fontClass: 'xl-3' },
         { maxWidth: 1024, fontClass: 'xl-2' },
         { maxWidth: 758, fontClass: 'xl' }
     ])} w-black`
 
+    // Переменная класса информации под номером
     const classPhoneInfo = `phone-info ${useReplacementClass('xl-2', [
         { maxWidth: 1536, fontClass: 'xl' },
         { maxWidth: 1024, fontClass: '' }
@@ -92,6 +94,7 @@ const HeaderRightMenu = () => {
                     <rect width="24.1332" height="4.02516" rx="2.01258" transform="matrix(0.704164 -0.710038 -0.704164 -0.710038 3.00635 19.9939)" fill="#currentColor" />
                 </svg>
             )}
+            
         </div>
     )
 }

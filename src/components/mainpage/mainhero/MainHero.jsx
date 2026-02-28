@@ -1,4 +1,6 @@
+// Импорт стиля
 import '../../../styles/mainhero.css'
+// Импорт компонентов
 import MainHeroInfo from "./MainHeroInfo"
 import MainShippingCalc from './MainShippingCalc'
 
