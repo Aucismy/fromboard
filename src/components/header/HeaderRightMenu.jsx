@@ -1,5 +1,5 @@
 // Импорт хуков стандартных и кастомных
-import { useWindowWidth } from "../../utils"
+import { useWindowWidth, useReplacementClass } from "../../utils"
 import { useState, useRef, useEffect } from "react"
 
 // Импорт компонентов
@@ -45,6 +45,17 @@ const HeaderRightMenu = () => {
         }
     }
 
+    const classPhoneNumber = `phone-number ${useReplacementClass('xl-4', [
+        { maxWidth: 1536, fontClass: 'xl-3' },
+        { maxWidth: 1024, fontClass: 'xl-2' },
+        { maxWidth: 758, fontClass: 'xl' }
+    ])} w-black`
+
+    const classPhoneInfo = `phone-info ${useReplacementClass('xl-2', [
+        { maxWidth: 1536, fontClass: 'xl' },
+        { maxWidth: 1024, fontClass: '' }
+    ])} light`
+
     return (
         <div className="header-right-menu">
             {widthScreen >= 1330 && (
@@ -55,7 +66,7 @@ const HeaderRightMenu = () => {
             )}
 
             {widthScreen > 580 && (
-                <PhoneInfo />
+                <PhoneInfo classPhoneNumber={classPhoneNumber} classPhoneInfo={classPhoneInfo}/>
             )}
 
             {/* Закрытое меню */}
