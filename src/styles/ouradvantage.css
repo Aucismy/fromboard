@@ -27,6 +27,7 @@
 
 .advantage>img {
     width: 136px;
+    user-select: none;
 }
 
 .advantage-info {

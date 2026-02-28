@@ -65,6 +65,8 @@
     color: var(--color-gray-600);
 }
 
+/* Адаптив */
+
 @media (max-width: 1450px) {
     .top-footer {
         grid-template-areas: 'footerlinks footerlinks'

@@ -23,6 +23,7 @@
     display: flex;
     align-items: center;
     gap: 4px;
+    user-select: none;
 }
 
 .header-right-menu {
@@ -65,6 +66,7 @@
 .top-links {
     display: flex;
     gap: 0 24px ;
+    user-select: none;
 }
 
 .submit-app {
@@ -72,11 +74,7 @@
     height: 44px;
 }
 
-
-
-
-
-
+/* Адаптив */
 @media (max-width: 1330px) {
     .header>.container {
         gap: 12px;

@@ -12,6 +12,8 @@
     text-align: center;
 }
 
+/* Форма остались вопросы */
+
 .form-other-questions {
     max-width: 497px;
     width: 100%;
@@ -22,6 +24,8 @@
         'foqbutton foqbutton';
     gap: 24px;
 }
+
+/* Поля */
 
 .foq-name {
     grid-area: foqname;
@@ -47,6 +51,8 @@
 .foq-button {
     grid-area: foqbutton;
 }
+
+/* Адаптив */
 
 @media (max-width: 590px) {
     .other-questions {

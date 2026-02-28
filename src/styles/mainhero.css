@@ -32,6 +32,8 @@
 
 .main-hero-info>img {
     width: 100%;
+    user-select: none;
+    pointer-events: none;
 }
 
 /* Форма заказа */

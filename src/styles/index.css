@@ -36,8 +36,8 @@
 }
 
 body {
-    max-width: 1920px;
-    margin: 0 auto;
+    /* max-width: 1920px;
+    margin: 0 auto; */
 }
 
 /* Применение шрифтов к текстовым элементам */
@@ -61,6 +61,7 @@ input[type="text"], textarea {
     border: 2px solid var(--color-gray-900);
     border-radius: 4px;
     padding: 12px;
+    user-select: none;
 }
 
 input[type="text"]::placeholder, textarea::placeholder {
@@ -113,6 +114,8 @@ svg:focus-visible {
 
 /* Контейнер  */
 .container {
+    max-width: 1920px;
+    margin: 0 auto;
     width: 100%;
     padding: 0px 192px;
 }
@@ -139,6 +142,7 @@ svg:focus-visible {
     align-items: center;
     background-color: var(--color-purple-500);
     color: var(--color-gray-50);
+    user-select: none;
 }
 
 .purple-button:hover {
@@ -154,9 +158,6 @@ svg:focus-visible {
     outline: 2px dashed var(--color-purple-400);
     outline-offset: 2px;
 }
-
-
-
 
 /* Адаптив */
 @media (max-width: 1500px) {
@@ -182,4 +183,3 @@ svg:focus-visible {
         padding: 0 20px;
     }
 }
-
