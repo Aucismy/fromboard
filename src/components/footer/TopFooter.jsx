@@ -6,6 +6,7 @@ import Logo from '../header/Logo'
 import TopLinks from '../header/TopLinks'
 import PhoneInfo from '../header/PhoneInfo'
 
+// Компонент верхнего футера
 const TopFooter = () => {
 
     // Переменная класса текста логотипа

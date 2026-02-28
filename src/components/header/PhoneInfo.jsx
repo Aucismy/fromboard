@@ -1,9 +1,6 @@
-// Импорт кастомных хук
-import { useReplacementClass, useWindowWidth } from "../../utils"
 
+// Компонент номера телефона с информацией
 const PhoneInfo = ({ classPhoneNumber = 'xl-4 w-black', classPhoneInfo = 'xl-2 light' }) => {
-
-
     return (
         <div className="phone-info">
             <span className={classPhoneNumber}>+7 (800) 123 45-67</span>

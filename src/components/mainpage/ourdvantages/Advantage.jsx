@@ -1,8 +1,10 @@
+// Импорт картинки по умолчанию
 import defaultPicture from '../../../resources/img/Board.png'
+// Импорт пользовательского хука
 import { useReplacementClass } from '../../../utils'
 
+// Карточка преимущества
 const Advantage = ({imgAdv = defaultPicture, headerAdv = 'Преимущество', descAdv = 'Описание преимущества'}) => {
-
     return (
         <div className="advantage">
             <img src={imgAdv} alt="advantage img" />

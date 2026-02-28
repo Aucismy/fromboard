@@ -1,6 +1,7 @@
 // Импорт пользовательского хука
 import { useReplacementClass } from '../../../utils'
 
+// Компонент карточки отзыва
 const FeedbackItem = ({feedback = 'Отзыв', author = 'Автор'}) => {
     return (
         <div className="feedback-item">

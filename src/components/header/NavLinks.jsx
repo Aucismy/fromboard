@@ -1,3 +1,4 @@
+// Импорт компонента
 import TopLinks from "./TopLinks"
 
 // Навигация по ссылкам

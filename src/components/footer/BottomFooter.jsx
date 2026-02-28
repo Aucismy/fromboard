@@ -1,6 +1,7 @@
 // Импорт пользовательского хука
 import { useWindowWidth } from "../../utils"
 
+// Компонент нижнего футера
 const BottomFooter = () => {
     return (
         <div className="bottom-footer">

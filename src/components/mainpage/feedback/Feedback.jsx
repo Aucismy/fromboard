@@ -6,7 +6,6 @@ import { useWindowWidth } from '../../../utils'
 // Импорт компонента
 import FeedbackItem from "./FeedbackItem"
 
-
 // Список отзывово 
 const listFeedback = [
     {feedback: 'Я заказала последний iPhone из США через ваш сервис, и доставка прошла быстро и без каких‑либо проблем. Гарантии качества и надёжная упаковка сделали мой опыт покупки невероятно позитивным', author: 'Анна'},
@@ -20,13 +19,14 @@ const listFeedback = [
 const Feedback = () => {
     const [currentPage, setCurrentPage] = useState(0)
 
+    // Предыдущий отзыв
     const onClickPrev = () => {
         setCurrentPage(prev => (prev - 1 + listFeedback.length) % listFeedback.length)
-        console.log(currentPage)
     }
+
+    // Следующий отзыв
     const onClickNext = () => {
         setCurrentPage(prev => (prev + 1 + listFeedback.length) % listFeedback.length)
-        console.log(currentPage)
     }
 
     return (

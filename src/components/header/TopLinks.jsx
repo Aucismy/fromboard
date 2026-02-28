@@ -1,5 +1,4 @@
-
-
+// Компонент с навигацией по сайту
 const TopLinks = () => {
     return (
         <nav className="top-links">

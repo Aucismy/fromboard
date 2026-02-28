@@ -1,8 +1,7 @@
-
+// Компонент формы калькуляции
 const MainShippingCalc = () => {
     return (
         <div className="main-shipping-calc">
-
             {/* Форма расчета */}
             <form action="" className="main-form">
                 <div className="form-info">

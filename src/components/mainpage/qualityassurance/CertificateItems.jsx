@@ -1,7 +1,7 @@
 // Импорт стандартной картинки сертификата
 import defaultCertified from '../../../resources/img/certified.png'
 
-// Компонент сертификата
+// Компонент карточки сертификата
 const CertificateItems = ({imgCert = defaultCertified, infoCert = ''}) => {
     return (
         <div className="certificate-items">

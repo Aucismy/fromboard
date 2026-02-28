@@ -1,5 +1,7 @@
 // Импорт компонентов
 import Header from "../header/Header"
+
+// Импорт компонентов
 import MainPage from "../mainpage/MainPage"
 import Footer from "../footer/Footer"
 

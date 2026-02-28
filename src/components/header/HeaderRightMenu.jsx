@@ -1,11 +1,12 @@
 // Импорт хуков стандартных и кастомных
 import { useWindowWidth, useReplacementClass } from "../../utils"
-import { useState, useRef, useEffect } from "react"
+import { useState, useEffect } from "react"
 
 // Импорт компонентов
 import DeliveryCost from "./DeliveryCost"
 import PhoneInfo from "./PhoneInfo"
 
+// Правая часть заголовка. Меню, номер телефона и информация
 const HeaderRightMenu = () => {
 
     // Переменная состояния кнопки меню
@@ -21,6 +22,7 @@ const HeaderRightMenu = () => {
         }
     }, [widthScreen])
 
+    
     // Функция для обработки нажатия кнопки меню
     const onClickBurger = () => {
 
@@ -30,18 +32,30 @@ const HeaderRightMenu = () => {
         // Переменная затемнения
         const overlayElement = document.querySelector('#overlay')
 
-        setStateBurger(!stateBurger)
-
-        // Открытие и закрытие скрытого меню
-        if (!stateBurger == true) {
+        // Функция открытия меню
+        const openBurger = () => {
+            setStateBurger(true)
             headerBottomElement.style.borderRadius = '0 0 16px 16px'
             headerBottomElement.style.display = 'flex'
             overlayElement.style.display = 'block'
         }
-        else {
+
+        // Функция закрытия меню
+        const closeBurger = () => {
+            setStateBurger(false)
             headerBottomElement.style.borderRadius = ''
             headerBottomElement.style.display = ''
             overlayElement.style.display = ''
+        }
+
+        overlayElement.addEventListener('click', closeBurger)
+
+        // Открытие и закрытие скрытого меню при нажатии на свг
+        if (!stateBurger == true) {
+            openBurger()
+        }
+        else {
+            closeBurger()
         }
     }
 
@@ -93,8 +107,7 @@ const HeaderRightMenu = () => {
                     <rect width="24.1335" height="4.02522" rx="2.01261" transform="matrix(0.703941 0.710258 0.703941 -0.710258 0 2.85895)" fill="#currentCollor" />
                     <rect width="24.1332" height="4.02516" rx="2.01258" transform="matrix(0.704164 -0.710038 -0.704164 -0.710038 3.00635 19.9939)" fill="#currentColor" />
                 </svg>
-            )}
-            
+            )}  
         </div>
     )
 }

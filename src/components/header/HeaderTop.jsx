@@ -1,5 +1,6 @@
 // Импорт пользовательского хука
 import { useReplacementClass } from "../../utils"
+
 // Импорт компонентов
 import Logo from "./Logo"
 import HeaderRightMenu from "./HeaderRightMenu"
