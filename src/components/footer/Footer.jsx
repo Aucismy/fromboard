@@ -1,5 +1,6 @@
 import '../../styles/footer.css'
 import TopFooter from "./TopFooter"
+import BottomFooter from './BottomFooter'
 
 
 const Footer = () => {
@@ -7,6 +8,7 @@ const Footer = () => {
         <footer className="footer">
             <div className="container">
                 <TopFooter />
+                <BottomFooter />
             </div>
         </footer>
     )
