@@ -14,7 +14,7 @@ import img6 from '../../../resources/img/garantee.png'
 
 const OurAdvantages = () => {
     return (
-        <div className="our-advantages">
+        <div className="our-advantages" id='advantage'>
             <h2 className='xl-3 w-black'>Наши преимущества</h2>
             <div className="list-advantages">
                 <Advantage imgAdv={img1} headerAdv='Растоможка груза' descAdv='Мы берём на себя все формальности и бумажную волокиту, связанную с растаможкой груза'/>

@@ -30,7 +30,7 @@ const Feedback = () => {
     }
 
     return (
-        <div className="feedback">
+        <div className="feedback" id='feedback'>
             <h2 className='xl-3 w-black'>Отзывы</h2>
             <div className="feedback-box">
                 <svg className="arrow left" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" tabIndex={0} onClick={onClickPrev}>

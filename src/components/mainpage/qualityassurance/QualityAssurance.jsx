@@ -13,7 +13,7 @@ import sert4 from '../../../resources/img/certificate4.png'
 // Компонент гарантии качества
 const QualityAssurance = () => {
     return (
-        <div className="quality-assurance">
+        <div className="quality-assurance" id='quality'>
             <div className="quality-info">
                 <h2 className="xl-3 w-black">Гарантии качества</h2>
                 <p>Наши гарантии качества включают в себя полный спектр документов, необходимых для ввоза и вывоза товаров, а также для успешного бизнеса на мировом рынке.
